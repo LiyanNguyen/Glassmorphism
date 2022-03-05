@@ -1,0 +1,100 @@
+:root {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+	--theme-color: #ff01cf;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/back.png);
+	background-position: center;
+	background-size: cover;
+	/*Center this container using flexbox method*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 90%;
+	max-width: 44rem;
+	color: white;
+	text-align: center;
+	padding: 5rem 3.5rem;
+
+	/*glass effect*/
+	border: .1rem solid rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 1.5rem;
+	box-shadow: 0 .5rem 3rem rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(.5rem);
+
+}
+
+.profile-img {
+	width: 14rem;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.profile-img:hover {
+	transform: scale(1.1);
+	outline: .5rem solid var(--theme-color);
+}
+
+.card h2 {
+	font-size: 4rem;
+	font-weight: 600;
+	margin-top: 2rem;
+	cursor: default;
+	transition: 0.5s;
+}
+
+.card p {
+	font-size: 1.8rem;
+	margin: 1rem auto;
+	max-width: 33rem;
+	cursor: default;
+	transition: 0.5s;
+}
+
+.card h2:hover,
+.card p:hover {
+	color: var(--theme-color);
+}
+
+.links img {
+	width: 4rem;
+	border-radius: 50%;
+	margin: 1rem .5rem;
+	transition: 0.5s;
+}
+
+.links img:hover {
+	background: var(--theme-color);
+}
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: 500;
+	background: white;
+	color: var(--theme-color);
+	padding: 1rem 3rem;
+	border-radius: 3rem;
+	margin: 3rem 1rem;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background: var(--theme-color);
+	color: white;
+}
